@@ -1,4 +1,5 @@
 import { Header } from './components/Header/Header.component'
+import './App.css'
 
 //Components 
 import { Item } from './components/Item/Item.component'
@@ -16,7 +17,7 @@ function App() {
   return (
     <div className="App">
       <Header/>
-      <div className="app_itemsContainer">
+      <div className="app__itemsContainer">
         <Item
           title="Lowest Cost Solar Panels in America"
           desc="Money-back guarantee"
@@ -24,7 +25,7 @@ function App() {
           backgroundImg={SolarPanels}
           leftBtnText='ORDER NOW'
           leftBtnLink=""
-          rightBtnTxt="LEARN MORE"
+          rightBtnText="LEARN MORE"
           rightBtnLink=""
           twoButtons="true"
           first
