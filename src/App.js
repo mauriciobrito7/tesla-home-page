@@ -16,7 +16,7 @@ import SolarRoof from "./assets/img/Desktop-SolarRoof.jpeg";
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <Header />
       <ItemsContainer>
         <Item
