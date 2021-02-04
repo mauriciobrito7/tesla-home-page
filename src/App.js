@@ -1,29 +1,30 @@
-import { Header } from './components/Header/Header.component'
-import './App.css'
+import React from "react";
 
-//Components 
-import { Item } from './components/Item/Item.component'
+//Components
+import { ItemsContainer } from "./App.styles";
+import { Header } from "./components/Header/Header.component";
+import { Item } from "./components/Item/Item.component";
 
 // Images
-import Accesories from './assets/img/Desktop-Accessories.jpg'
-import ModelS from './assets/img/Desktop-ModelS.jpeg'
-import Model3 from './assets/img/Desktop-Model3.jpeg'
-import ModelX from './assets/img/Desktop-ModelX.jpeg'
-import ModelY from './assets/img/Desktop-ModelY.jpeg'
-import SolarPanels from './assets/img/Desktop-SolarPanels.jpeg' 
-import SolarRoof  from './assets/img/Desktop-SolarRoof.jpeg'
+import Accesories from "./assets/img/Desktop-Accessories.jpg";
+import ModelS from "./assets/img/Desktop-ModelS.jpeg";
+import Model3 from "./assets/img/Desktop-Model3.jpeg";
+import ModelX from "./assets/img/Desktop-ModelX.jpeg";
+import ModelY from "./assets/img/Desktop-ModelY.jpeg";
+import SolarPanels from "./assets/img/Desktop-SolarPanels.jpeg";
+import SolarRoof from "./assets/img/Desktop-SolarRoof.jpeg";
 
 function App() {
   return (
     <div className="App">
-      <Header/>
-      <div className="app__itemsContainer">
+      <Header />
+      <ItemsContainer>
         <Item
           title="Lowest Cost Solar Panels in America"
           desc="Money-back guarantee"
           descLink=""
           backgroundImg={SolarPanels}
-          leftBtnText='ORDER NOW'
+          leftBtnText="ORDER NOW"
           leftBtnLink=""
           rightBtnText="LEARN MORE"
           rightBtnLink=""
@@ -35,7 +36,7 @@ function App() {
           desc="$69,420"
           descLink=""
           backgroundImg={ModelS}
-          leftBtnText='CUSTOM ORDER'
+          leftBtnText="CUSTOM ORDER"
           leftBtnLink=""
           rightBtnText="LEARN MORE"
           rightBtnLink=""
@@ -46,7 +47,7 @@ function App() {
           desc="Money-back guarantee"
           descLink=""
           backgroundImg={Model3}
-          leftBtnText='CUSTOM ORDER'
+          leftBtnText="CUSTOM ORDER"
           leftBtnLink=""
           rightBtnText="LEARN MORE"
           rightBtnLink=""
@@ -57,7 +58,7 @@ function App() {
           desc="Money-back guarantee"
           descLink=""
           backgroundImg={ModelX}
-          leftBtnText='CUSTOM ORDER'
+          leftBtnText="CUSTOM ORDER"
           leftBtnLink=""
           rightBtnText="LEARN MORE"
           rightBtnLink=""
@@ -68,7 +69,7 @@ function App() {
           desc="Money-back guarantee"
           descLink=""
           backgroundImg={ModelY}
-          leftBtnText='CUSTOM ORDER'
+          leftBtnText="CUSTOM ORDER"
           leftBtnLink=""
           rightBtnText="LEARN MORE"
           rightBtnLink=""
@@ -79,7 +80,7 @@ function App() {
           desc="Money-back guarantee"
           descLink=""
           backgroundImg={SolarRoof}
-          leftBtnText='ORDER NOW'
+          leftBtnText="ORDER NOW"
           leftBtnLink=""
           rightBtnText="LEARN MORE"
           rightBtnLink=""
@@ -90,12 +91,12 @@ function App() {
           desc="Money-back guarantee"
           descLink=""
           backgroundImg={Accesories}
-          leftBtnText='SHOP NOW'
+          leftBtnText="SHOP NOW"
           leftBtnLink=""
           rightBtnText="LEARN MORE"
           rightBtnLink=""
         />
-      </div>
+      </ItemsContainer>
     </div>
   );
 }
