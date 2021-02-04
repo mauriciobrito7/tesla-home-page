@@ -1,7 +1,6 @@
 import React from "react";
 import { Button } from "../Button/Button.component";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
-import "./item.styles.css";
 import {
   ItemBackground,
   Container,
