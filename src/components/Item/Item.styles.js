@@ -1,4 +1,5 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+import { bounce } from "../../styles/animations";
 
 export const ItemBackground = styled.div`
   background-image: url(${(props) => props.backgroundImg});
@@ -54,5 +55,7 @@ export const ItemExpandIcon = styled.div`
   width: 100%;
   margin-top: 3%;
   justify-content: center;
+  align-items: center;
   text-align: center;
+  ${bounce()}
 `;
