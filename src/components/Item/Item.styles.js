@@ -1,5 +1,6 @@
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 import { bounce } from "../../styles/animations";
+import { device } from "../../styles/theme";
 
 export const ItemBackground = styled.div`
   background-image: url(${(props) => props.backgroundImg});
@@ -22,22 +23,42 @@ export const Container = styled.div`
 
 export const ItemText = styled.div`
   margin-top: 20%;
+  width: 80vw;
+  height: 65vh;
   display: flex;
   flex-direction: column;
-  font-size: 34px;
   color: #393c41;
   align-items: center;
-  flex: 1;
+  justify-content: flex-start;
 `;
 
 export const ItemTitle = styled.h2`
+  margin-top: calc(16vh + 20px);
+  font-size: 27px;
   font-weight: normal;
   text-align: center;
+  ${device.tablet`
+      margin-top: calc(8vh);
+  `}
+  ${device.desktop`
+      font-size: 34px;
+  `}
+  ${device.large`
+      font-size: 45px;
+      margin-top: 8px;
+  `}
 `;
 
 export const ItemDesc = styled.p`
-  font-weight: 200;
+  font-weight: 100;
   font-size: 14px;
+
+  ${device.desktop`
+      font-size: 16px;
+  `}
+  ${device.large`
+      font-size: 18px;
+  `}
 `;
 
 export const ItemLowerThird = styled.div`
@@ -48,14 +69,30 @@ export const ItemLowerThird = styled.div`
 
 export const ItemButtons = styled.div`
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 80vw;
+  ${device.custom(
+    `
+    flex-wrap: nowrap;
+  `,
+    "600px"
+  )}
 `;
 
 export const ItemExpandIcon = styled.div`
   color: white;
   width: 100%;
-  margin-top: 3%;
   justify-content: center;
   align-items: center;
   text-align: center;
   ${bounce()}
+
+  svg {
+    ${device.desktop`
+      width: 1.5em;
+      height: 1.5em;
+    `}
+  }
 `;
